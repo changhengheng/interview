@@ -1,0 +1,109 @@
+原生echarts：
+1. 创建容器
+2. init一个echarts 实例
+3. 对这个实例进行配置
+
+缺陷：
+1.数据分同步和异步，如果数据是异步回来的，需要set两次才行
+2.自己写响应式
+	window.onresize里调resizeAPI重新渲染
+	onresize事件触发频率非常高，节流
+优点：
+	任意项目都可用
+基本配置：
+3个：xAxis、yAxis、series
+xAxis：{
+	show:false
+	data
+	type
+	min:最小值
+	max：最大值
+}
+yAxis:{
+show:false
+data
+type:可用于交换x和y轴
+}
+tooltip:{
+trigger:提示，配合series的name使用
+}
+- series
+	type:"line"、"pie"、"bar"
+	对象和数组
+	color
+其他配置：
+grid：{
+top
+left
+right
+bottom
+}
+
+
+vue-echarts
+- 
+
+优点：
+即时数据是异步，也不需要set两次
+可以配置响应式：autoresize（布尔值）
+
+
+2023-7-13 10:25:55
+
+
+强制触发视图更新，只要页面有数据更改即可，这样就不用重新请求列表数据，降低请求所需的开销
+- 前台项目
+- 大屏展示当前时间
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
