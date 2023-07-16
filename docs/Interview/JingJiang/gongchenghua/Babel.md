@@ -1,0 +1,11 @@
+# Babel
+- 一个 JavaScript 编译器，可以将 ES6+ 语法编译成 ES5- 语法。
+- 浏览器认识 ES5 以下语法，ES6语法可能会导致存在兼容性问题。使用 Babel 进行编译即可解决。
+- @babel/preset-env	预设包
+    - babel自己不能转换语法，而是使用一个预设包，配置在preset里，安装babel时会安装所有的预设包；
+    - 预设包安装了很多插件可以用来转换ES6语法
+    - 预设包只能转化基础语法
+- polyfill 补丁包
+    - 转化复杂语法，比如说promise、map、set
+- core-js（配置bebal的按需打包）
+	- babel的按需打包，用哪个插件，打包哪个插件使用，没用的不打包
